@@ -1,0 +1,49 @@
+.loading{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0);
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -100;
+
+
+  &.show {
+    animation: ani ease-in-out .3s both;
+    background-color: rgba(51, 51, 51, .3);
+    transition: all .3s;
+    z-index: 10000;
+  }
+}
+
+@keyframes ani {
+  to {
+    background-color: rgba(51, 51, 51, 0.4);
+    opacity: 1;
+  }
+}
+
+#loading-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 34px;
+  height: 34px;
+  margin-left: -17px;
+  margin-top: -17px;
+  z-index: 999;
+  -webkit-animation: rotate 0.6s linear infinite;
+  animation: rotate 0.6s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
