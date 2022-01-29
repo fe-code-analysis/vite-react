@@ -31,6 +31,14 @@ const About = () => {
 
   const forceUpdate = useForceUpdate();
 
+  useEffect(() => {
+    function fn() {
+      console.log('setTimeout')
+      setTimeout(fn, 2 * 1000);
+    }
+    fn()
+  }, [])
+
   return(
     <>
       <h3>About</h3>

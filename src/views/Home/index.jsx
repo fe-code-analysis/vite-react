@@ -24,6 +24,15 @@ const Home = (props) => {
         <li>
           <Link to="/ahookuse">AHookUse</Link>
         </li>
+        <li>
+          <Link to="/localstore">LocalStore</Link>
+        </li>
+        <li>
+          <Link to="/fetchretry">FeatchRetry</Link>
+        </li>
+        <li>
+          <Link to="/pageunload">PageUnload</Link>
+        </li>
       </ul>
     </>
   )

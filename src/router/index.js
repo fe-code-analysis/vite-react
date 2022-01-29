@@ -5,8 +5,35 @@ import NotMatch from '../views/NotMatch'
 import Test from "../views/Test"
 import Async from '../views/Async'
 import AHookUse from "../views/AHookUse"
+import LocalStore from "../views/LocalStore"
+import FetchRetry from "../views/FetchRetry"
+import PageUnload from "../views/PageUnload"
 
-export default [
+export default [{
+  path: '/pageunload',
+  exact: true,
+  view: PageUnload,
+  meta: {
+    title: '页面卸载'
+  },
+  key: Math.random()
+}, {
+  path: '/fetchretry',
+  exact: true,
+  view: FetchRetry,
+  meta: {
+    title: '接口重试'
+  },
+  key: Math.random()
+}, {
+  path: '/localstore',
+  exact: true,
+  view: LocalStore,
+  meta: {
+    title: '本地存储'
+  },
+  key: Math.random()
+},
   {
     path: '/ahookuse',
     exact: true,
