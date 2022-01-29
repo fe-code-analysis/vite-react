@@ -6,7 +6,6 @@ async function getList() {
 }
 
 const AHookUse = () => {
-  console.log('render')
   const [count, setCount] = useState(0);
   const update = useUpdate();
   const req = useRequest(getList, {
