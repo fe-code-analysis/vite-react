@@ -33,6 +33,12 @@ const Home = (props) => {
         <li>
           <Link to="/pageunload">PageUnload</Link>
         </li>
+        <li>
+          <Link to="/lazyload">LazyLoad</Link>
+        </li>
+        <li>
+        <Link to="/gradient">线性渐变</Link>
+        </li>
       </ul>
     </>
   )

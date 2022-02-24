@@ -33,7 +33,7 @@ const LocalStore = () => {
   async function saveItem() {
     i ++
     let r = await lf.setItem('userName' + i,  '' + Math.random())
-    console.log(r);
+    console.log('saveItem', r);
   }
 
   async function getItem() {

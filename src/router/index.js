@@ -8,8 +8,33 @@ import AHookUse from "../views/AHookUse"
 import LocalStore from "../views/LocalStore"
 import FetchRetry from "../views/FetchRetry"
 import PageUnload from "../views/PageUnload"
+import LazyLoad from "../views/LazyLoad"
+import LoadImg from "../views/LoadImg"
+import Gradient from "../views/Gradient"
 
 export default [{
+  path: '/gradient',
+  exact: true,
+  view: Gradient,
+  meta: {
+    title: '线性渐变'
+  }
+}, {
+  path: '/loadimg',
+  exact: true,
+  view: LoadImg,
+  meta: {
+    title: '懒加载图片'
+  }
+}, {
+  path: '/lazyload',
+  exact: true,
+  view: LazyLoad,
+  meta: {
+    title: '组件懒加载'
+  },
+  key: Math.random()
+}, {
   path: '/pageunload',
   exact: true,
   view: PageUnload,

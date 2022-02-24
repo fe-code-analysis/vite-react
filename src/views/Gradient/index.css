@@ -1,0 +1,13 @@
+.gradient{
+  width: 300px;
+  height: 200px;
+  border: 1px solid #333;
+  background: #c20;
+  margin: 100px auto;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  letter-spacing: 18px;
+  overflow: hidden;
+  word-break: normal;
+}
